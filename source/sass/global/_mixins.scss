@@ -1,0 +1,42 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin btn-res {
+  font: inherit;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin linx($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+
+    &:visited {
+      color: $visit;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 1.5dppx) {
+    @content;
+  }
+}

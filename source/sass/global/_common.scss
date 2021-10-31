@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+
+  display: grid;
+
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: $gray;
+  background-color: $white;
+
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
