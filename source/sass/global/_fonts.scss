@@ -41,3 +41,47 @@
     url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
     url("../fonts/SFProDisplay-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Barlow";
+  font-weight: 300;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Barlow Light"), local("Barlow-Light"),
+    url("../fonts/barlow-300.woff2") format("woff2"),
+    url("../fonts/barlow-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Barlow Regular"), local("Barlow-Regular"),
+    url("../fonts/barlow-regular.woff2") format("woff2"),
+    url("../fonts/barlow-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Barlow Semibold"), local("Barlow-Semibold"),
+    url("../fonts/barlow-600.woff2") format("woff2"),
+    url("../fonts/barlow-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Barlow Bold"), local("Barlow-Bold"),
+    url("../fonts/barlow-700.woff2") format("woff2"),
+    url("../fonts/barlow-700.woff") format("woff");
+}
