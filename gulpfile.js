@@ -70,9 +70,10 @@ const optimizeImages = () => {
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return src(`${source}/img/**/*.{png,jpg,svg}`).pipe(
-    dest(`${destination}/img`)
-  );
+  return src([
+    `${source}/img/**/*.{png,jpg,svg}`,
+    `!${source}/img/icons/*.svg`,
+  ]).pipe(dest(`${destination}/img`));
 };
 
 exports.images = copyImages;
@@ -107,11 +108,9 @@ exports.sprite = sprite;
 const copy = (done) => {
   src(
     [
-      `source/fonts/*.{woff2,woff}`,
-      `source/*.ico`,
-      `source/img/**/*.svg`,
-      `!source/img/icons/*.svg`,
-      `source/manifest.webmanifest`,
+      `${source}/manifest.webmanifest`,
+      `${source}/fonts/*.{woff2,woff}`,
+      `${source}/*.ico`,
     ],
     {
       base: source,
@@ -154,7 +153,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  watch(`${source}/sass/**/*.scss`, series(styles));
+  watch(`${source}/sass/**/*.scss`, series(styles, reload));
   watch(`${source}/js/**/*.js`, series(scripts));
   watch(`${source}/pug/**/*.pug`, series(html, reload));
 };
