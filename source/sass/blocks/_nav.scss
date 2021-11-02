@@ -1,0 +1,106 @@
+.nav__outer {
+  display: grid;
+
+  &--left {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 12%;
+    order: 1;
+  }
+
+  &--right {
+    grid-template-columns: 1fr min-content;
+    order: 3;
+    grid-gap: 6.4%;
+    align-items: center;
+  }
+}
+
+.nav__list {
+  display: grid;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $base-color;
+
+  grid-template-columns: repeat(8, max-content);
+  gap: 5.5%;
+}
+
+.nav__link {
+  font-family: $base-font;
+  font-size: 20px;
+  font-weight: bold;
+
+  &--outer {
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &--inner {
+    font-weight: normal;
+
+    position: relative;
+
+    display: block;
+
+    padding: 15px 0 14px;
+
+    transition: text-shadow 0.2s ease-in-out;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      left: auto;
+
+      width: 0;
+      height: 3px;
+
+      content: "";
+      transition: width 0.2s ease-in-out;
+
+      background-color: $accent-color;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      right: auto;
+      left: 0;
+
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      text-shadow: 0 0 0.65px $main-text-color, 0 0 0.65px $main-text-color;
+    }
+  }
+}
+
+.nav__address {
+  position: relative;
+
+  padding-left: 54px;
+
+  letter-spacing: 0.3px;
+
+  svg {
+    position: absolute;
+    bottom: 5px;
+    left: 26px;
+
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}

@@ -7,5 +7,10 @@
 @import "global/_mixins.scss";
 @import "global/_fonts.scss";
 @import "global/_common.scss";
+@import "global/_container.scss";
 
 // Общие стили
+
+@import "blocks/_header.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_user-panel.scss";

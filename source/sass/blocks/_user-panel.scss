@@ -1,0 +1,52 @@
+.user-panel {
+  display: grid;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-template-columns: repeat(3, min-content);
+  align-items: center;
+}
+
+.user-panel__link {
+  display: block;
+
+  padding: 5px;
+
+  &--cart {
+    position: relative;
+
+    padding-right: 24px;
+  }
+
+  & svg {
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}
+
+.user-panel__quantity {
+  font-family: $base-font;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2;
+
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+
+  width: 20px;
+  height: 20px;
+
+  text-align: center;
+
+  color: white;
+  border-radius: 50%;
+  background-color: $accent-color;
+}

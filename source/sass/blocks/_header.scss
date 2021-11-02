@@ -1,0 +1,14 @@
+.header__top {
+  display: grid;
+
+  padding: 25px 0 17px;
+
+  grid-template-columns: 1fr minmax(80px, 170px) 1fr;
+  grid-gap: 2.5%;
+  align-items: center;
+}
+
+.header__logo {
+  justify-self: center;
+  order: 2;
+}
