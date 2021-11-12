@@ -50,7 +50,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return src([`node_modules/jquery/dist/jquery.js`, `${source}/js/script.js`])
+  return src([`node_modules/jquery/dist/jquery.js`, `${source}/js/**/*.js`])
     .pipe(concat(`main.min.js`))
     .pipe(terser())
     .pipe(dest(`${destination}/js`))

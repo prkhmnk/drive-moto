@@ -24,3 +24,11 @@
 //     navMain.classList.add("main-nav--closed");
 //   }
 // });
+
+$(function () {
+  $(`.slider__list`).slick({
+    dots: true,
+    nextArrow: `<button class="slider__controls slider__controls--prev"><svg width="16" height="29" viewBox="0 0 16 29" xmlns="http://www.w3.org/2000/svg"><use xlink:href="./img/sprite.svg#icon-arrow-left"></use></svg></button>`,
+    prevArrow: `<button class="slider__controls slider__controls--next"><svg width="16" height="29" viewBox="0 0 16 29" xmlns="http://www.w3.org/2000/svg"><use xlink:href="./img/sprite.svg#icon-arrow-right"></use></svg></button>`,
+  });
+});
