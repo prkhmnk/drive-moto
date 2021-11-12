@@ -1,7 +1,11 @@
+.header {
+  margin-bottom: 81px;
+}
+
 .header__top {
   display: grid;
 
-  padding: 25px 0 17px;
+  padding: 25px 0 21px;
 
   grid-template-columns: 1fr minmax(80px, 170px) 1fr;
   grid-gap: 2.5%;
