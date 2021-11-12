@@ -1,0 +1,35 @@
+header.header
+  .container
+    nav.nav
+      .header__top
+        a.header__logo.logo
+          img.logo__img(src="img/logo/logo.svg" alt="На главную" width="80" height="76")
+        .nav__outer.nav__outer--left
+          a.nav__link.nav__link--outer(href="#") Магазины
+          a.nav__link.nav__link--outer(href="#") Акции
+          a.nav__link.nav__link--outer(href="#") Доставка и оплата
+        .nav__outer.nav__outer--right
+          a.nav__link.nav__link--outer.nav__address(href="https://goo.gl/maps/HM9uY6uoHzToVCk19")
+            svg(width="26" height="30" viewBox="0 0 26 30" xmlns="http://www.w3.org/2000/svg")
+              use(xlink:href="./img/sprite.svg#icon-location")
+            span Москва,  ул. Науки  25
+          ul.user-panel
+            li.user-panel__item: a.user-panel__link.user-panel__link--heart(href="#" aria-label="Избранное")
+              svg(width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="./img/sprite.svg#icon-heart")
+            li.user-panel__item: a.user-panel__link.user-panel__link--person(href="#" aria-label="Аккаунт")
+              svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="./img/sprite.svg#icon-person")
+            li.user-panel__item: a.user-panel__link.user-panel__link--cart(href="#" aria-label="Корзина")
+              svg(width="30" height="23" viewBox="0 0 30 23" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="./img/sprite.svg#icon-cart")
+              span.user-panel__quantity 1
+      ul.header__bottom.nav__list
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Квадроциклы
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Катера
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Гидроциклы
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Лодки
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Вездеходы
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Снегоходы
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Двигатели
+        li.nav__item: a.nav__link.nav__link--inner(href="#") Запчасти
