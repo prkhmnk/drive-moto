@@ -1,13 +1,5 @@
-include includes/global/_config.pug
+extends includes/template.pug
 
-doctype html
-html(lang=lang)
-  include includes/global/_head.pug
-  body
-    include includes/blocks/_header.pug
-    main.main
-      h1.visually-hidden Онлайн-магазин транспортных средств
-      include includes/blocks/_hero.pug
-  footer.footer
-    .container
-  script(src=`js/main.min.js`)
+block content
+  h1.visually-hidden Онлайн-магазин транспортных средств
+  include includes/_hero.pug
