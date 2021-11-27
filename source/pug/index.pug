@@ -1,5 +1,11 @@
 extends includes/template.pug
 
+block metatags
+  meta(name=`theme-color` content=themeColor)
+  meta(name=`keywords` content=keywords)
+  meta(name=`description` content=description)
+
 block content
   h1.visually-hidden Онлайн-магазин транспортных средств
   include includes/_hero.pug
+  include includes/_search.pug
