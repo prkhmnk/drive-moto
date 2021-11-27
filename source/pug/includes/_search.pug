@@ -1,0 +1,14 @@
+section.search
+  .container
+    ul.search__list.tabs(id="myTab" role="tablist")
+      li.search__item(role="presentation")
+        button.search__btn(id="number-tab" data-bs-toggle="tab" data-bs-target="номер" type="button" role="tab" aria-controls="number" aria-selected="true") Поиск по номеру
+      li.search__item(role="presentation")
+        button.search__btn.search__btn--active(id="brand-tab" data-bs-toggle="tab" data-bs-target="марку" type="button" role="tab" aria-controls="brand" aria-selected="false") Поиск по марке
+      li.search__item(role="presentation")
+        button.search__btn(id="title-tab" data-bs-toggle="tab" data-bs-target="название товара" type="button" role="tab" aria-controls="title" aria-selected="false") Поиск по названию товара
+    search
+      form.search__form(action="http://echo.htmlacademy.ru")
+        label.visually-hidden(for="search") Введите марку
+        input.search__input(id="search" name="search" type="search" placeholder="Введите марку")
+        button.search__btn.search__btn--submit(type="submit") Искать
