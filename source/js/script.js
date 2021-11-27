@@ -31,4 +31,14 @@ $(function () {
     nextArrow: `<button class="slider__controls slider__controls--prev"><svg width="16" height="29" viewBox="0 0 16 29" xmlns="http://www.w3.org/2000/svg"><use xlink:href="./img/sprite.svg#icon-arrow-left"></use></svg></button>`,
     prevArrow: `<button class="slider__controls slider__controls--next"><svg width="16" height="29" viewBox="0 0 16 29" xmlns="http://www.w3.org/2000/svg"><use xlink:href="./img/sprite.svg#icon-arrow-right"></use></svg></button>`,
   });
+
+  $(`.search__btn`).on(`click`, function (evt) {
+    evt.preventDefault();
+    $(`.search__btn`).removeClass(`search__btn--active`);
+    $(`.search__input`).attr(
+      `placeholder`,
+      `Введите ${$(this).data(`bs-target`)}`
+    );
+    $(this).addClass(`search__btn--active`);
+  });
 });
