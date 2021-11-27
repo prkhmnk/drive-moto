@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}

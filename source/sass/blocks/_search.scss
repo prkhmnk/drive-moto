@@ -1,0 +1,95 @@
+.search__list {
+  margin-bottom: 27px;
+}
+
+.search__item + .search__item {
+  margin-left: 5px;
+}
+
+.search__btn {
+  font-family: $base-font;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+
+  display: inline-block;
+
+  padding: 0.6rem 1.2rem;
+
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+
+  color: $main-text-color;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    text-shadow: 0 0 0.65px $main-text-color;
+  }
+
+  &--active {
+    background-color: $base-color;
+    text-shadow: 0 0 0.65px $main-text-color;
+  }
+
+  &--submit {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+
+    position: absolute;
+    right: 0;
+
+    padding: 16px 38px 15px;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: $accent-color;
+
+    &:hover,
+    &:focus {
+      text-shadow: 0 0 0.65px $base-color;
+    }
+  }
+}
+
+.search__form {
+  position: relative;
+}
+
+.search__input {
+  width: 100%;
+  padding: 15px 160px 15px 19px;
+
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: $base-color;
+}
+
+.search__input::placeholder {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+
+  color: rgba($main-text-color, 0.7);
+}
+
+.search__input:hover,
+.search__input:focus-visible {
+  outline: 2px solid $accent-color;
+}

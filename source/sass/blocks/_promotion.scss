@@ -6,6 +6,13 @@
   align-items: center;
   border: 1px solid $secondary-text-color;
   border-radius: 3px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 
 .promotion__title {
